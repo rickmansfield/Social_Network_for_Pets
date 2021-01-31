@@ -2,8 +2,8 @@ import React from 'react';
 import { fetchUserData, cancelFetch } from './dataFetcher';
 import { Userlist } from './Userlist';
 
-export class Profile extends React.Component {  
-  
+export class Profile extends React.Component {
+  componentDidMount() {this.loadUserData();}  
   componentDidUpdate(prevProps) {
   if (this.props.username !== prevProps.username) {cancelFetch(this.fetchID);
   this.loadUserData()};
