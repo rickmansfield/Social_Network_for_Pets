@@ -1,0 +1,1 @@
+Demonstrates Building Front-end Applications with React with emphasis on Lifecycle Methods
